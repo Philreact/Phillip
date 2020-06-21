@@ -25,6 +25,7 @@ const Layout = ({ children, title, description }: Props) => (
       <title>{title ? title : "Phillip Lang: Front-end Developer"}</title>
       <meta name="description" content={description ? description : ""}></meta>
     </Head>
+
     <header>
       <Navbar></Navbar>
     </header>
