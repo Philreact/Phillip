@@ -24,7 +24,7 @@
       "Stripe"
     ],
     "subtitle": "An app for English teachers",
-    "github": ""
+    "github": "placeholder"
   },
 
   {
@@ -36,7 +36,8 @@
     "hide": true,
     "text": "was my first production ready application. We made it to help English teachers manage their lessons and exchange content between students and other teachers. This app is pretty complex. It involves two types of authorizations / login portals. We used Stripe's API for payments. Not only did we need Stripe to charge teachers (we have since made Topscholar free) but teachers can also use Topscholar to charge their own students (using Stripe Connect).",
     "technologies": ["React", "Nextjs"],
-    "github": ""
+    "github": "placeholder",
+    "subtitle": "placeholder"
   },
   {
     "name": "Andrew",
@@ -47,6 +48,7 @@
     "hide": true,
     "text": "text",
     "technologies": ["React"],
-    "github": ""
+    "github": "placeholder",
+    "subtitle": "placeholder"
   }
 ]

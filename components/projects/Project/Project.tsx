@@ -9,9 +9,8 @@ interface Props {
   text: string;
   technologies: string[];
   hide?: boolean;
-  subtitle: string;
-
-  github: string;
+  subtitle?: string;
+  github?: string;
 }
 
 const Project = (props: Props) => {
