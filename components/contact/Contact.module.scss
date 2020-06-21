@@ -5,7 +5,7 @@
       rgba(white, 0.9) 50%,
       transparent 50%
     ),
-    url(../../public/img/coding-img.jpg);
+    url("https://res.cloudinary.com/unnamed/image/upload/c_scale,w_1200/v1592725475/Phil/coding-img_m8n093.jpg");
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
@@ -16,7 +16,7 @@
         rgba(white, 0.9) 50%,
         rgba(white, 0.9) 100%
       ),
-      url(../../public/img/coding-img.jpg);
+      url("https://res.cloudinary.com/unnamed/image/upload/c_scale,w_1200/v1592725475/Phil/coding-img_m8n093.jpg");
   }
 
   &__form {

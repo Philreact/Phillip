@@ -9,7 +9,9 @@ interface Props {
   text: string;
   technologies: string[];
   hide?: boolean;
-  youtube: string;
+  subtitle: string;
+
+  github: string;
 }
 
 const Project = (props: Props) => {
@@ -29,14 +31,21 @@ const Project = (props: Props) => {
       <div className={[classes["Project"], classes[isActive()]].join(" ")}>
         <div className={[classes["Project__left"]].join(" ")}>
           <div className={[classes["Project__left-box"]].join(" ")}>
-            <iframe
-              width="100%"
-              height="100%"
-              src={props.youtube}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <p className={[classes["Project__title"]].join(" ")}>
+              {props.name}
+            </p>
+            <p className={[classes["Project__subtitle"]].join(" ")}>
+              {props.subtitle}
+            </p>
+            <a
+              target="_blank"
+              href={props.github}
+              className={classes["Project__link"]}
+            >
+              <svg className={classes.Project__github}>
+                <use xlinkHref="img/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </a>
           </div>
         </div>
         <div className={[classes["Project__right"]].join(" ")}>

@@ -22,7 +22,9 @@
       "Heroku",
       "Socket.io",
       "Stripe"
-    ]
+    ],
+    "subtitle": "An app for English teachers",
+    "github": ""
   },
 
   {
@@ -33,7 +35,8 @@
     "side": "right",
     "hide": true,
     "text": "was my first production ready application. We made it to help English teachers manage their lessons and exchange content between students and other teachers. This app is pretty complex. It involves two types of authorizations / login portals. We used Stripe's API for payments. Not only did we need Stripe to charge teachers (we have since made Topscholar free) but teachers can also use Topscholar to charge their own students (using Stripe Connect).",
-    "technologies": ["React", "Nextjs"]
+    "technologies": ["React", "Nextjs"],
+    "github": ""
   },
   {
     "name": "Andrew",
@@ -43,6 +46,7 @@
     "side": "right",
     "hide": true,
     "text": "text",
-    "technologies": ["React"]
+    "technologies": ["React"],
+    "github": ""
   }
 ]
