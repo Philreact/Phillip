@@ -1,0 +1,37 @@
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
+.Layout {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.Content {
+  display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+}
+
+.main {
+  flex: 1;
+  min-height: calc(100vh - 7rem);
+
+  @media only screen and (min-width: $bp-largest) {
+    min-height: calc(100vh - 7rem - 8rem - 8rem);
+  }
+}

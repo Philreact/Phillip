@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Topscholar",
+    "url": "https://topscholar.io",
+    "youtube": "https://www.youtube.com/embed/20cUC4pZKWc",
+    "active": true,
+    "side": "right",
+    "text": "was my first production ready application. We made it to help English teachers manage their lessons and exchange content between students and other teachers. This app is pretty complex. It involves two types of authorizations / login portals. We used Stripe's API for payments. Not only did we need Stripe to charge teachers (we have since made Topscholar free) but teachers can also use Topscholar to charge their own students (using Stripe Connect).",
+    "technologies": [
+      "React",
+      "Redux",
+      "React-Router",
+      "Redux-Thunk",
+      "Bootstrap",
+      "Nodejs / Express",
+      "Momentjs",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Cloundinary",
+      "Sendgrid",
+      "Heroku",
+      "Socket.io",
+      "Stripe"
+    ]
+  },
+
+  {
+    "name": "philliplang.com",
+    "url": "https://philliplang.com",
+    "active": false,
+    "youtube": "https://www.youtube.com/embed/20cUC4pZKWc",
+    "side": "right",
+    "hide": true,
+    "text": "was my first production ready application. We made it to help English teachers manage their lessons and exchange content between students and other teachers. This app is pretty complex. It involves two types of authorizations / login portals. We used Stripe's API for payments. Not only did we need Stripe to charge teachers (we have since made Topscholar free) but teachers can also use Topscholar to charge their own students (using Stripe Connect).",
+    "technologies": ["React", "Nextjs"]
+  },
+  {
+    "name": "Andrew",
+    "url": "https://topscholar.io",
+    "youtube": "https://www.youtube.com/embed/20cUC4pZKWc",
+    "active": false,
+    "side": "right",
+    "hide": true,
+    "text": "text",
+    "technologies": ["React"]
+  }
+]

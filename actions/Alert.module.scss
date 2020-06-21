@@ -1,0 +1,13 @@
+.Alert {
+  &__zIndexToast {
+    z-index: 1000;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 300;
+}

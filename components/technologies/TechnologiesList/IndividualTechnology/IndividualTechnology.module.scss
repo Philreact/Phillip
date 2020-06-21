@@ -1,0 +1,86 @@
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
+.IndividualTechnology {
+  width: 100%;
+  height: 100%;
+
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.3rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+  }
+
+  &__footer {
+    display: flex;
+
+    padding: 0.4rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__type {
+    color: var(--color-grey-dark-1);
+    font-size: 1.2rem;
+    // background-color: var(--color-grey-light-3);
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: var(--shadow-light);
+    transition: all 0.2s;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
+  }
+
+  &__exp {
+    background-color: var(--color-grey-dark-1);
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
+  }
+
+  &__years {
+    font-size: 1.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.technology {
+  background: var(--color-primary-light);
+  color: white;
+}
+.service {
+  background: #1c86ee;
+  color: white;
+}
+.learning {
+  background: lightsalmon;
+  color: white;
+}

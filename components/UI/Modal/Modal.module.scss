@@ -1,0 +1,78 @@
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
+.Modal {
+  position: fixed;
+  z-index: -100;
+  visibility: hidden;
+  background-color: white;
+  width: 60%;
+  box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
+  padding: 16px;
+
+  box-sizing: border-box;
+  // transition: all 0.3s ease-out;
+  border-radius: 3px;
+  animation: ModalTransitionOut 0.5s forwards;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10%;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 90%;
+  }
+
+  &--primary {
+    background-color: var(--color-grey-light-3);
+  }
+}
+
+@media (min-width: 600px) {
+  // .Modal {
+  //   width: 500px;
+  //   left: calc(50% - 250px);
+  // }
+  .Modal {
+    width: 500px;
+  }
+}
+
+.addAnimation {
+  animation: ModalTransition 0.5s forwards;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.no-animate {
+  animation: none;
+}
+
+@keyframes ModalTransition {
+  0% {
+    z-index: -100;
+    visibility: hidden;
+    transform: scale(0);
+  }
+  100% {
+    z-index: 500;
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+@keyframes ModalTransitionOut {
+  0% {
+    z-index: 500;
+    visibility: visible;
+    transform: scale(1);
+  }
+  100% {
+    z-index: -100;
+    visibility: hidden;
+    transform: scale(0);
+  }
+}
